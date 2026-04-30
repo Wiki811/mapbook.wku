@@ -1,22 +1,5 @@
-def wyswietl_napis(zmienna_1:str)->None:
-    '''
-    funkcja do wyświetlania napisu przez użytkownika
-    :param zmienna_1:
-    :return:
-    '''
-    print('cos')
-    print(zmienna_1)
+moja_lista_na_sok=['banan','marchew']
+print(moja_lista_na_sok)
 
-wyswietl_napis(zmienna_1='okulary')
-
-while True:
-    print('0 - zakończ program')
-    print('1 - wyświetl napis')
-
-    choose=input('wybierz opcję: ')
-    if choose =='0':
-        break
-    if choose == '1':
-        tmp_data=input('podaj słowo: ')
-        wyswietl_napis(zmienna_1=tmp_data)
-
+moja_lista_na_sok.append('jabłko')
+print(moja_lista_na_sok)
