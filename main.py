@@ -1,10 +1,12 @@
 from mapbook_wku.model import users
-from mapbook_wku.controller import read_data, add_user
+from mapbook_wku.controller import read_data, add_user, remove_user
+from notatnik import remove_user
 
 while True:
     print('0 - zakończ program')
     print('1 - wyświetl znajomych')
     print('2 - dodaj znajomego')
+    print('3 - usuń znajomego')
 
     choose = input('wybierz opcję: ')
     if choose == '0':
@@ -13,3 +15,5 @@ while True:
         read_data(users[1:])
     if choose == '2':
         add_user(users)
+    if choose == '3':
+        remove_user(users)
