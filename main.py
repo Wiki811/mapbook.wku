@@ -1,15 +1,6 @@
 from mapbook_wku.model import users
 from mapbook_wku.controller import read_data, add_user
 
-def add_user(users_data: list) -> None:
-    name = input('podaj imie: ')
-    location = input('podaj lokalizację: ')
-    posts = int(input('podaj liczbę postów: '))
-    usermessage = ['']
-    users_data.append({'username': name, 'location': location, 'posts': posts,
-                       'usermessage': usermessage}, )
-
-
 while True:
     print('0 - zakończ program')
     print('1 - wyświetl znajomych')
